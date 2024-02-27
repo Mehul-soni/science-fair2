@@ -1,0 +1,85 @@
+/* Resetting default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Setting up basic typography */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Stylish font */
+    background-color: #ffcc00; /* Slightly darker yellow background color */
+    color: #333; /* Default text color */
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    height: 100vh;
+}
+
+
+/* Centering content horizontally */
+.page {
+    text-align: center;
+}
+
+/* Styling buttons */
+button {
+    padding: 10px 20px;
+
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s ease;
+    display: block; /* Display as block-level elements */
+    width: 200px; /* Set width to ensure centered alignment */
+    
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Styling input fields */
+input[type="text"],
+input[type="password"] {
+    padding: 8px;
+    font-size: 16px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Styling form */
+/* form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #007bff; /* Form border */
+    /* border-radius: 10px;
+    padding: 20px;
+} */ 
+
+/* Styling video element */
+#cameraFeed {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Styling photo container */
+#capturedPhoto {
+    margin-top: 10px;
+}
+
+/* Styling page titles */
+h2 {
+    margin-bottom: 10px;
+    font-size: 24px; /* Larger font size for titles */
+    color: #007bff; /* Blue color for titles */
+}

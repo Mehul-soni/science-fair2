@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <div class="header">
+    <h1>Traffic Signal Controller</h1>
+  </div>
+  <link rel="stylesheet" href="formcss.css">
+  <link rel="stylesheet" href="header.css">
+    <script>  
+        function validateform(){  
+        var name=document.myform.name.value;  
+        var password=document.myform.password.value;  
+          
+        if (name=="user" && password=="1234"){  
+          return true;  
+        }
+
+        else{  
+          alert("wrong credentials")
+          return false;  
+          }  
+        }  
+        </script>  
+        <body>  
+        <form name="myform" method="post" action="1.html" onsubmit="return validateform()" >  
+        <b>NAME:</b> <input type="text" name="name"><br/>  
+        <b>PASSWORD:</b> <input type="password" name="password"><br/>  
+        <input type="submit" value="LOGIN" onclick="Login()">  
+        </form>
+</body>
+</html>

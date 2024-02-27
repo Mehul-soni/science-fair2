@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="2.css">
+    <link rel="stylesheet" href="header.css">
+    <title>Emergency Vehicle Control App</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Traffic Signal Controller</h1>
+      </div>
+
+    <div id="loginPage" class="page">
+        <p>Successful Authorized Access</p>
+        <button onclick="login()">PROCEED</button>
+    </div>
+
+    <div id="vehicleTypePage" class="page" style="display: none;">
+        <h2><b>SELECT VEHILCLE TYPE</b></h2>
+        <button onclick="selectVehicleType(true)">Four-Wheeler</button>
+        <button onclick="selectVehicleType(false)">Not Four-Wheeler</button>
+    </div>
+
+    <div id="cameraAccessPage" class="page" style="display: none;">
+        <h2><b>CAMERA ACCESS</b></h2>
+        <p>Real-time Camera Feed:</p>
+        <video id="cameraFeed" autoplay></video>
+        <button onclick="capturePhoto()">Capture Photo</button>
+        <button onclick="downloadPhotoAndProceed()">Download Photo</button>
+        <!-- <button onclick="proceedToSignalSelection()">Next</button> -->
+        <div id="capturedPhoto"></div>
+    </div>
+
+    <div id="unauthorizedAccessPage" class="page" style="display: none;">
+        <h2>Unauthorized Access</h2>
+        <p>You do not have access to the camera. Terminating...</p>
+    </div>
+
+    <div id="selectSignalPage" class="page" style="display: none;">
+        <h2><b>SELECT TRAFFIC SIGNAL</b></h2>
+        <button onclick="selectSignal('signal1')">Signal 1</button>
+        <button onclick="selectSignal('signal2')">Signal 2</button>
+        <button onclick="selectSignal('signal3')">Signal 3</button>
+    </div>
+
+    <div id="changeColorPage" class="page" style="display: none;">
+        <h2>Change Signal Color</h2>
+        <p>Do you want to change the signal color to green?</p>
+        <button onclick="confirmChangeColor(true)">Yes</button>
+        <button onclick="confirmChangeColor(false)">No</button>
+    </div>
+
+    <div id="signalGreenPage" class="page" style="display: none;">
+        <h2>Signal Green</h2>
+        <p>The selected signal has been turned green.</p>
+        <button onclick="proceedToNextPage()">Next</button>
+    </div>
+
+    <script src="3.js"></script>
+</body>
+</html>
